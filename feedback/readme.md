@@ -1,4 +1,4 @@
-
+留言板项目，最开始是使用原生的node写的，后改良使用express开源框架
 // http
 //     .createServer(function (req, res) {
 //         var parseObj = new URL(req.url, 'http://127.0.0.1:8081/')
