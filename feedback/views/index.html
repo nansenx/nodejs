@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言版页面</title>
+    <link rel="stylesheet" href="/public/lib/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="header container">
+        <div class="page-header">
+            <h1>留言板  <small>模仿的第n+1个nodejs案例</small></h1>
+            <a class="btn btn-success" href="/post">发布留言</a>
+        </div>
+    </div>
+    <div class="comments container">
+        <ul class="list-group">
+            {{each dataList}}
+            <li class="list-group-item">
+                {{$value.name}}说：{{$value.message}}
+                <span class="pull-right">{{$value.time}}</span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</body>
+
+</html>
